@@ -98,14 +98,14 @@ pub fn configure_telemetry_consent_dialog() -> anyhow::Result<bool> {
     );
     println!();
 
-    let enabled = cliclack::confirm("Share anonymous usage data to help improve goose?")
+    let enabled = cliclack::confirm("Share anonymous usage data to help improve QiaotongAgent?")
         .initial_value(true)
         .interact()?;
 
     config.set_param(TELEMETRY_ENABLED_KEY, enabled)?;
 
     if enabled {
-        let _ = cliclack::log::success("Thank you for helping improve goose!");
+        let _ = cliclack::log::success("Thank you for helping improve QiaotongAgent!");
     } else {
         let _ = cliclack::log::info("Telemetry disabled. You can enable it anytime in settings.");
     }
@@ -115,7 +115,10 @@ pub fn configure_telemetry_consent_dialog() -> anyhow::Result<bool> {
 
 async fn handle_first_time_setup(config: &Config) -> anyhow::Result<()> {
     println!();
-    println!("{}", style("Welcome to goose! Let's get you set up.").dim());
+    println!(
+        "{}",
+        style("Welcome to QiaotongAgent! Let's get you set up.").dim()
+    );
     println!(
         "{}",
         style("  you can rerun this command later to update your configuration").dim()
@@ -1374,14 +1377,14 @@ pub fn configure_telemetry_dialog() -> anyhow::Result<()> {
 
     let _ = cliclack::log::info(format!("Current telemetry status: {}", current_status));
 
-    let enabled = cliclack::confirm("Share anonymous usage data to help improve goose?")
+    let enabled = cliclack::confirm("Share anonymous usage data to help improve QiaotongAgent?")
         .initial_value(current_choice.unwrap_or(true))
         .interact()?;
 
     config.set_param(TELEMETRY_ENABLED_KEY, enabled)?;
 
     if enabled {
-        cliclack::outro("Telemetry enabled - thank you for helping improve goose!")?;
+        cliclack::outro("Telemetry enabled - thank you for helping improve QiaotongAgent!")?;
     } else {
         cliclack::outro("Telemetry disabled")?;
     }
@@ -1787,7 +1790,7 @@ pub async fn handle_openrouter_auth() -> anyhow::Result<()> {
                 .complete(
                     &provider_model_config,
                     "",
-                    "You are goose, an AI assistant.",
+                    "You are QiaotongAgent, an autonomous AI agent created by BRDI",
                     &[Message::user().with_text("Say 'Configuration test successful!'")],
                     &[],
                 )
@@ -1817,7 +1820,7 @@ pub async fn handle_openrouter_auth() -> anyhow::Result<()> {
                         println!("✓ Developer extension enabled");
                     }
 
-                    cliclack::outro("OpenRouter setup complete! You can now use goose.")?;
+                    cliclack::outro("OpenRouter setup complete! You can now use QiaotongAgent.")?;
                 }
                 Err(e) => {
                     eprintln!("⚠️  Configuration test failed: {}", e);
@@ -1889,7 +1892,7 @@ pub async fn handle_tetrate_auth() -> anyhow::Result<()> {
                     }
 
                     cliclack::outro(
-                        "Tetrate Agent Router Service setup complete! You can now use goose.",
+                        "Tetrate Agent Router Service setup complete! You can now use QiaotongAgent.",
                     )?;
                 }
                 Err(e) => {

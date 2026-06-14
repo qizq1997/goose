@@ -52,7 +52,7 @@ const i18n = defineMessages({
   },
   addApiKeyDescription: {
     id: 'providerConfigurationModal.addApiKeyDescription',
-    defaultMessage: 'Add your API key(s) for this provider to integrate into goose',
+    defaultMessage: 'Add your API key(s) for this provider to integrate into QiaotongAgent',
   },
   oauthLoginFailed: {
     id: 'providerConfigurationModal.oauthLoginFailed',
@@ -97,7 +97,7 @@ const i18n = defineMessages({
   },
   externalSetupIntro: {
     id: 'providerConfigurationModal.externalSetupIntro',
-    defaultMessage: 'This provider is configured outside of goose. Follow these steps:',
+    defaultMessage: 'This provider is configured outside of QiaotongAgent. Follow these steps:',
   },
   seeDocumentation: {
     id: 'providerConfigurationModal.seeDocumentation',
@@ -225,9 +225,12 @@ export default function ProviderConfigurationModal({
       });
       if (oauthResult.error) {
         const err = oauthResult.error as Record<string, unknown>;
-        const errDetail = typeof oauthResult.error === 'string'
-          ? oauthResult.error
-          : (err?.message as string) ?? (err?.detail as string) ?? JSON.stringify(oauthResult.error);
+        const errDetail =
+          typeof oauthResult.error === 'string'
+            ? oauthResult.error
+            : ((err?.message as string) ??
+              (err?.detail as string) ??
+              JSON.stringify(oauthResult.error));
         throw new Error(errDetail);
       }
       if (onConfigured) {

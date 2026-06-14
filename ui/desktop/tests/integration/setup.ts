@@ -54,7 +54,7 @@ export async function setupGoosed({
   pathOverride?: string;
   configYaml?: string;
 }): Promise<GoosedTestContext> {
-  const tempDir = await fs.promises.mkdtemp(path.join(os.tmpdir(), 'goose-app-root-'));
+  const tempDir = await fs.promises.mkdtemp(path.join(os.tmpdir(), 'qiaotongagent-app-root-'));
 
   if (configYaml) {
     await fs.promises.mkdir(path.join(tempDir, 'config'), { recursive: true });

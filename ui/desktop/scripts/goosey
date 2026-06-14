@@ -37,5 +37,5 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     fi
 else
     # For Linux, assuming the binary is installed in the PATH
-    goose-app --dir "$dir"
+    qiaotongagent-app --dir "$dir"
 fi

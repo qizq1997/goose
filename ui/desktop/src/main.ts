@@ -54,6 +54,8 @@ import installExtension, { REACT_DEVELOPER_TOOLS } from 'electron-devtools-insta
 import { BLOCKED_PROTOCOLS, WEB_PROTOCOLS } from './utils/urlSecurity';
 import { buildCSP } from './utils/csp';
 
+const APP_NAME = 'QiaotongAgent';
+
 function shouldSetupUpdater(): boolean {
   // Setup updater if either the flag is enabled OR dev updates are enabled
   return UPDATES_ENABLED || process.env.ENABLE_DEV_UPDATES === 'true';
@@ -81,7 +83,7 @@ const MENU_TRANSLATIONS_ZH_CN: Record<string, string> = {
   Cut: '剪切',
   Copy: '复制',
   Paste: '粘贴',
-  // Goose-added items
+  // App-added items
   'New Window': '新建窗口',
   Settings: '设置',
   'Find…': '查找…',
@@ -93,11 +95,11 @@ const MENU_TRANSLATIONS_ZH_CN: Record<string, string> = {
   'New Chat Window': '新建聊天窗口',
   'Open Directory...': '打开目录…',
   'Recent Directories': '最近的目录',
-  'Focus Goose Window': '聚焦 Goose 窗口',
+  'Focus QiaotongAgent Window': '聚焦 QiaotongAgent 窗口',
   'Quick Launcher': '快速启动器',
   'Always on Top': '窗口置顶',
   'Toggle Navigation': '切换导航',
-  'About Goose': '关于 Goose',
+  'About QiaotongAgent': '关于 QiaotongAgent',
   // Electron's default role-based labels we want to translate as well.
   // (The menu role itself still provides the correct behaviour; only the
   // display string is overridden.)
@@ -123,7 +125,7 @@ const MENU_TRANSLATIONS_ZH_CN: Record<string, string> = {
   'Bring All to Front': '全部置于最前',
   'Emoji & Symbols': '表情符号',
   'Start Dictation…': '开始听写…',
-  'Hide Goose': '隐藏 Goose',
+  'Hide QiaotongAgent': '隐藏 QiaotongAgent',
   'Hide Others': '隐藏其他',
   'Show All': '全部显示',
   Services: '服务',
@@ -259,6 +261,8 @@ async function configureProxy() {
 }
 
 if (started) app.quit();
+
+app.setName(APP_NAME);
 
 // Certificate trust for goosed servers (local and external).
 // Both certificate-error (renderer) and setCertificateVerifyProc (main-process
@@ -612,7 +616,7 @@ app.on('open-url', async (_event, url) => {
 app.on('will-finish-launching', () => {
   if (process.platform === 'darwin') {
     app.setAboutPanelOptions({
-      applicationName: 'Goose',
+      applicationName: APP_NAME,
       applicationVersion: app.getVersion(),
     });
   }
@@ -667,7 +671,7 @@ async function handleFileOpen(filePath: string) {
 
     // Show user-friendly error notification
     new Notification({
-      title: 'Goose',
+      title: APP_NAME,
       body: `Could not open directory: ${path.basename(filePath)}`,
     }).show();
   }
@@ -976,7 +980,7 @@ const createChat = async (app: App, options: CreateChatOptions = {}) => {
     } else {
       dialog.showMessageBoxSync({
         type: 'error',
-        title: 'Goose Failed to Start',
+        title: 'QiaotongAgent Failed to Start',
         message: 'The backend server failed to start.',
         detail: failureDetailParts.join('\n\n'),
         buttons: ['OK'],
@@ -1134,7 +1138,7 @@ const createChat = async (app: App, options: CreateChatOptions = {}) => {
     }
   }
 
-  // Goose's react app uses HashRouter, so the path + search params follow a #/
+  // QiaotongAgent's react app uses HashRouter, so the path + search params follow a #/
   url.hash = `${appPath}?${searchParams.toString()}`;
   let formattedUrl = formatUrl(url);
   log.info('Opening URL: ', formattedUrl);
@@ -2202,7 +2206,7 @@ async function appMain() {
 
   const shortcuts = getKeyboardShortcuts(settings);
 
-  const appMenu = menu?.items.find((item) => item.label === 'Goose');
+  const appMenu = menu?.items.find((item) => item.label === APP_NAME);
   if (appMenu?.submenu) {
     appMenu.submenu.insert(1, new MenuItem({ type: 'separator' }));
     if (shortcuts.settings) {
@@ -2330,7 +2334,7 @@ async function appMain() {
     if (shortcuts.focusWindow) {
       fileMenu.submenu.append(
         new MenuItem({
-          label: menuT('Focus Goose Window'),
+          label: menuT('Focus QiaotongAgent Window'),
           accelerator: shortcuts.focusWindow,
           click() {
             focusWindow();
@@ -2437,13 +2441,13 @@ async function appMain() {
         helpMenu.submenu.append(new MenuItem({ type: 'separator' }));
       }
 
-      // Create the About Goose menu item with a submenu
+      // Create the About app menu item with a submenu
       const aboutGooseMenuItem = new MenuItem({
-        label: menuT('About Goose'),
+        label: menuT('About QiaotongAgent'),
         submenu: Menu.buildFromTemplate([]), // Start with an empty submenu for About
       });
 
-      // Add the Version menu item (display only) to the About Goose submenu
+      // Add the Version menu item (display only) to the About app submenu
       if (aboutGooseMenuItem.submenu) {
         aboutGooseMenuItem.submenu.append(
           new MenuItem({
@@ -2753,7 +2757,7 @@ app.whenReady().then(async () => {
   try {
     await appMain();
   } catch (error) {
-    dialog.showErrorBox('Goose Error', `Failed to create main window: ${error}`);
+    dialog.showErrorBox(`${APP_NAME} Error`, `Failed to create main window: ${error}`);
     app.quit();
   }
 });

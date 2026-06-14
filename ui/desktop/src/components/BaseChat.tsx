@@ -1,11 +1,5 @@
 import { AppEvents } from '../constants/events';
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { defineMessages, useIntl } from '../i18n';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { SearchView } from './conversation/SearchView';
@@ -135,7 +129,8 @@ export default function BaseChat({
     return initialMessage;
   }, [initialMessage, recipe?.prompt, session?.user_recipe_values]);
 
-  const canAutoSubmit = session?.session_type === 'scheduled' || !recipe || hasNotAcceptedRecipe === false;
+  const canAutoSubmit =
+    session?.session_type === 'scheduled' || !recipe || hasNotAcceptedRecipe === false;
 
   useAutoSubmit({
     sessionId,
@@ -200,7 +195,11 @@ export default function BaseChat({
   const latestInference = useMemo(() => {
     for (let i = messages.length - 1; i >= 0; i--) {
       const message = messages[i];
-      if (message.role === 'assistant' && message.metadata.userVisible && message.metadata.inference) {
+      if (
+        message.role === 'assistant' &&
+        message.metadata.userVisible &&
+        message.metadata.inference
+      ) {
         return message.metadata.inference;
       }
     }
@@ -374,7 +373,9 @@ export default function BaseChat({
             <div className="flex-1 flex items-center justify-center">
               <div className="flex flex-col items-center justify-center p-8">
                 <div className="text-red-700 dark:text-red-300 bg-red-400/50 p-4 rounded-lg mb-4 max-w-md">
-                  <h3 className="font-semibold mb-2">{intl.formatMessage(i18n.failedToLoadSession)}</h3>
+                  <h3 className="font-semibold mb-2">
+                    {intl.formatMessage(i18n.failedToLoadSession)}
+                  </h3>
                   <p className="text-sm">{sessionLoadError}</p>
                 </div>
                 <button
@@ -405,7 +406,7 @@ export default function BaseChat({
 
         {/* Chat container with sticky recipe header */}
         <div className="flex flex-col flex-1 min-h-0 relative">
-          {/* Goose watermark - top right */}
+          {/* App watermark - top right */}
           <div className="absolute top-3 right-4 z-[60] flex flex-row items-center gap-1">
             <a
               href="https://goose-docs.ai"
@@ -415,7 +416,7 @@ export default function BaseChat({
             >
               <Goose className="size-5 goose-icon-animation" />
               <span className="text-sm leading-none text-text-secondary -translate-y-px">
-                goose
+                QiaotongAgent
               </span>
             </a>
             <EnvironmentBadge className="translate-y-px" />
@@ -506,14 +507,11 @@ export default function BaseChat({
             accumulatedOutputTokens={
               tokenState?.accumulatedOutputTokens ?? session?.accumulated_output_tokens ?? undefined
             }
-            accumulatedCost={
-              tokenState?.accumulatedCost ?? session?.accumulated_cost ?? undefined
-            }
+            accumulatedCost={tokenState?.accumulatedCost ?? session?.accumulated_cost ?? undefined}
             droppedFiles={droppedFiles}
             onFilesProcessed={() => setDroppedFiles([])} // Clear dropped files after processing
             messages={messages}
             disableAnimation={disableAnimation}
-
             recipe={recipe}
             recipeAccepted={!hasNotAcceptedRecipe}
             initialPrompt={initialPrompt}
@@ -545,16 +543,16 @@ export default function BaseChat({
         recipe.parameters.length > 0 &&
         !session?.user_recipe_values &&
         session?.session_type !== 'scheduled' && (
-        <ParameterInputModal
-          parameters={recipe.parameters}
-          onSubmit={setRecipeUserParams}
-          onClose={() => setView('chat')}
-          initialValues={
-            (window.appConfig?.get('recipeParameters') as Record<string, string> | undefined) ||
-            undefined
-          }
-        />
-      )}
+          <ParameterInputModal
+            parameters={recipe.parameters}
+            onSubmit={setRecipeUserParams}
+            onClose={() => setView('chat')}
+            initialValues={
+              (window.appConfig?.get('recipeParameters') as Record<string, string> | undefined) ||
+              undefined
+            }
+          />
+        )}
 
       <CreateRecipeFromSessionModal
         isOpen={isCreateRecipeModalOpen}

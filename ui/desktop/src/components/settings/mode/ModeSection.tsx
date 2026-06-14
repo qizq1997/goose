@@ -17,8 +17,8 @@ export const ModeSection = ({ sessionId }: { sessionId?: string }) => {
       await upsert('GOOSE_MODE', newMode, false);
       setCurrentMode(newMode);
     } catch (error) {
-      console.error('Error updating goose mode:', error);
-      throw new Error(`Failed to store new goose mode: ${newMode}`);
+      console.error('Error updating QiaotongAgent mode:', error);
+      throw new Error(`Failed to store new QiaotongAgent mode: ${newMode}`);
     }
   };
 

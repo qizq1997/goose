@@ -48,7 +48,8 @@ const i18n = defineMessages({
   },
   skillsDescription: {
     id: 'skillsView.skillsDescription',
-    defaultMessage: 'View installed skills that extend Goose capabilities. {shortcut} to search.',
+    defaultMessage:
+      'View installed skills that extend QiaotongAgent capabilities. {shortcut} to search.',
   },
   searchSkillsPlaceholder: {
     id: 'skillsView.searchSkillsPlaceholder',

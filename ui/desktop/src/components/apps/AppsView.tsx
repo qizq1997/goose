@@ -28,7 +28,7 @@ const i18n = defineMessages({
   description: {
     id: 'appsView.description',
     defaultMessage:
-      'Applications from your MCP servers and Apps built by goose itself. You can ask it to create new apps through the chat interface and they will appear here.',
+      'Applications from your MCP servers and Apps built by QiaotongAgent itself. You can ask it to create new apps through the chat interface and they will appear here.',
   },
   loading: {
     id: 'appsView.loading',
@@ -41,7 +41,7 @@ const i18n = defineMessages({
   noAppsDescription: {
     id: 'appsView.noAppsDescription',
     defaultMessage:
-      'Open a chat and ask goose for the app you want to have. It can build one for you and that will appear here. Or if somebody shared an app, you can import it using the button above.',
+      'Open a chat and ask QiaotongAgent for the app you want to have. It can build one for you and that will appear here. Or if somebody shared an app, you can import it using the button above.',
   },
   customApp: {
     id: 'appsView.customApp',
@@ -160,7 +160,7 @@ export default function AppsView() {
         query: { session_id: sessionId },
       });
       const fetchedApps = response.data?.apps || [];
-      // Only show apps from the "apps" extension (vibe coded apps built by Goose)
+      // Only show apps from the "apps" extension (vibe coded apps built by QiaotongAgent)
       setApps(fetchedApps.filter((a) => a.mcpServers?.includes('apps')));
       setError(null);
     } catch (err) {
@@ -227,7 +227,7 @@ export default function AppsView() {
         throwOnError: true,
       });
       const cachedApps = response.data?.apps || [];
-      // Only show apps from the "apps" extension (vibe coded apps built by Goose)
+      // Only show apps from the "apps" extension (vibe coded apps built by QiaotongAgent)
       setApps(cachedApps.filter((a) => a.mcpServers?.includes('apps')));
       setError(null);
     } catch (err) {

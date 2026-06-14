@@ -18,7 +18,7 @@
     "defaultMessage": "Пользовательское приложение"
   },
   "appsView.description": {
-    "defaultMessage": "Приложения с ваших MCP-серверов и приложения, созданные самим goose. Вы можете попросить его создать новые приложения через чат, и они появятся здесь."
+    "defaultMessage": "Приложения с ваших MCP-серверов и приложения, созданные самим QiaotongAgent. Вы можете попросить его создать новые приложения через чат, и они появятся здесь."
   },
   "appsView.errorLoading": {
     "defaultMessage": "Ошибка загрузки приложений: {error}"
@@ -33,7 +33,7 @@
     "defaultMessage": "Загрузка приложений..."
   },
   "appsView.noAppsDescription": {
-    "defaultMessage": "Откройте чат и попросите goose создать нужное приложение. Он может собрать его для вас, после чего оно появится здесь. Если кто-то поделился приложением, импортируйте его кнопкой выше."
+    "defaultMessage": "Откройте чат и попросите QiaotongAgent создать нужное приложение. Он может собрать его для вас, после чего оно появится здесь. Если кто-то поделился приложением, импортируйте его кнопкой выше."
   },
   "appsView.noAppsTitle": {
     "defaultMessage": "Нет доступных приложений"
@@ -102,10 +102,10 @@
     "defaultMessage": "Запустить"
   },
   "chat.notification.taskComplete.body": {
-    "defaultMessage": "Нажмите здесь, чтобы сфокусироваться на Goose."
+    "defaultMessage": "Нажмите здесь, чтобы сфокусироваться на QiaotongAgent."
   },
   "chat.notification.taskComplete.title": {
-    "defaultMessage": "Goose завершил задачу."
+    "defaultMessage": "QiaotongAgent завершил задачу."
   },
   "chatInput.contextWindow": {
     "defaultMessage": "Контекстное окно"
@@ -162,13 +162,13 @@
     "defaultMessage": "Ожидание сохранения изображений..."
   },
   "chatSettings.modeDescription": {
-    "defaultMessage": "Настройте как Goose взаимодействует с инструментами и расширениями"
+    "defaultMessage": "Настройте как QiaotongAgent взаимодействует с инструментами и расширениями"
   },
   "chatSettings.modeTitle": {
     "defaultMessage": "Режим"
   },
   "chatSettings.responseStylesDescription": {
-    "defaultMessage": "Выберите как Goose должен форматировать и оформлять ответы"
+    "defaultMessage": "Выберите как QiaotongAgent должен форматировать и оформлять ответы"
   },
   "chatSettings.responseStylesTitle": {
     "defaultMessage": "Стили ответов"
@@ -189,10 +189,10 @@
     "defaultMessage": "Редактор конфигурации"
   },
   "configSettings.description": {
-    "defaultMessage": "Измените настройки конфигурации goose"
+    "defaultMessage": "Измените настройки конфигурации QiaotongAgent"
   },
   "configSettings.descriptionWithProvider": {
-    "defaultMessage": "Измените настройки конфигурации goose (текущие настройки для {provider})"
+    "defaultMessage": "Измените настройки конфигурации QiaotongAgent (текущие настройки для {provider})"
   },
   "configSettings.done": {
     "defaultMessage": "Готово"
@@ -765,7 +765,7 @@
     "defaultMessage": "Изменить параметры {name}"
   },
   "defaultCardButtons.getStarted": {
-    "defaultMessage": "Начните работу с goose!"
+    "defaultMessage": "Начните работу с QiaotongAgent!"
   },
   "defaultProviderSetupForm.apiHostLabel": {
     "defaultMessage": "Хост API"
@@ -924,7 +924,7 @@
     "defaultMessage": "Запрос на информацию был отменен."
   },
   "elicitationRequest.defaultMessage": {
-    "defaultMessage": "Goose нужна от вас дополнительная информация."
+    "defaultMessage": "QiaotongAgent нужна от вас дополнительная информация."
   },
   "elicitationRequest.expired": {
     "defaultMessage": "Срок действия запроса истек. Расширению нужно будет запросить его снова."
@@ -966,7 +966,7 @@
     "defaultMessage": "Произошла ошибка."
   },
   "errorBoundary.errorWithVersion": {
-    "defaultMessage": "Произошла ошибка в Goose v{version}."
+    "defaultMessage": "Произошла ошибка в QiaotongAgent v{version}."
   },
   "errorBoundary.heading": {
     "defaultMessage": "Га-га!"
@@ -1152,7 +1152,7 @@
     "defaultMessage": "Расширения, включенные здесь, используются по умолчанию для новых чатов. Активные расширения также можно переключать во время чата."
   },
   "extensionsView.description": {
-    "defaultMessage": "Эти расширения используют Model Context Protocol (MCP). Они расширяют возможности Goose с помощью трех основных компонентов: промптов, ресурсов и инструментов. {searchShortcut} для поиска."
+    "defaultMessage": "Эти расширения используют Model Context Protocol (MCP). Они расширяют возможности QiaotongAgent с помощью трех основных компонентов: промптов, ресурсов и инструментов. {searchShortcut} для поиска."
   },
   "extensionsView.heading": {
     "defaultMessage": "Расширения"
@@ -1170,10 +1170,10 @@
     "defaultMessage": "AA:BB:CC:... or sha256/base64"
   },
   "externalBackendSection.description": {
-    "defaultMessage": "По умолчанию goose запускает сервер за вас; используйте это для подключения к внешнему серверу goose"
+    "defaultMessage": "По умолчанию QiaotongAgent запускает сервер за вас; используйте это для подключения к внешнему серверу QiaotongAgent"
   },
   "externalBackendSection.restartNote": {
-    "defaultMessage": "Чтобы изменения вступили в силу, требуется перезапуск Goose. Новые окна чата будут подключаться к внешнему серверу."
+    "defaultMessage": "Чтобы изменения вступили в силу, требуется перезапуск QiaotongAgent. Новые окна чата будут подключаться к внешнему серверу."
   },
   "externalBackendSection.secretKey": {
     "defaultMessage": "Секретный ключ"
@@ -1188,7 +1188,7 @@
     "defaultMessage": "URL сервера"
   },
   "externalBackendSection.title": {
-    "defaultMessage": "Сервер Goose"
+    "defaultMessage": "Сервер QiaotongAgent"
   },
   "externalBackendSection.urlFormatError": {
     "defaultMessage": "Неверный формат URL"
@@ -1200,7 +1200,7 @@
     "defaultMessage": "Использовать внешний сервер"
   },
   "externalBackendSection.useExternalServerDescription": {
-    "defaultMessage": "Подключиться к серверу goose, запущенному в другом месте (требуется перезапуск приложения)"
+    "defaultMessage": "Подключиться к серверу QiaotongAgent, запущенному в другом месте (требуется перезапуск приложения)"
   },
   "freeOptionCards.chooseOption": {
     "defaultMessage": "Выберите вариант, чтобы начать."
@@ -1299,7 +1299,7 @@
     "defaultMessage": "Разработчик"
   },
   "goosehintsModal.dialogDescription": {
-    "defaultMessage": "Предоставьте дополнительный контекст о проекте, чтобы улучшить взаимодействие с Goose"
+    "defaultMessage": "Предоставьте дополнительный контекст о проекте, чтобы улучшить взаимодействие с QiaotongAgent"
   },
   "goosehintsModal.dialogTitle": {
     "defaultMessage": "Настроить подсказки проекта (.goosehints)"
@@ -1320,7 +1320,7 @@
     "defaultMessage": "Файл .goosehints найден по пути: {filePath}"
   },
   "goosehintsModal.helpText1": {
-    "defaultMessage": ".goosehints — это текстовый файл для дополнительного контекста о проекте и улучшения взаимодействия с Goose."
+    "defaultMessage": ".goosehints — это текстовый файл для дополнительного контекста о проекте и улучшения взаимодействия с QiaotongAgent."
   },
   "goosehintsModal.helpText2": {
     "defaultMessage": "Убедитесь, что расширение {bold} включено на странице расширений. Оно необходимо для использования .goosehints. Чтобы обновления .goosehints вступили в силу, перезапустите сеанс."
@@ -1347,13 +1347,13 @@
     "defaultMessage": "Настроить"
   },
   "goosehintsSection.description": {
-    "defaultMessage": "Настройте файл .goosehints вашего проекта, чтобы предоставить Goose дополнительный контекст"
+    "defaultMessage": "Настройте файл .goosehints вашего проекта, чтобы предоставить QiaotongAgent дополнительный контекст"
   },
   "goosehintsSection.title": {
     "defaultMessage": "Подсказки проекта (.goosehints)"
   },
   "groupedExtensionLoadingToast.askGoose": {
-    "defaultMessage": "Спросить goose"
+    "defaultMessage": "Спросить QiaotongAgent"
   },
   "groupedExtensionLoadingToast.collapseDetails": {
     "defaultMessage": "Свернуть детали"
@@ -1458,7 +1458,7 @@
     "defaultMessage": "Может не поместиться в память (модель {size}, доступно {available})"
   },
   "imagePreview.altText": {
-    "defaultMessage": "изображение goose"
+    "defaultMessage": "изображение QiaotongAgent"
   },
   "imagePreview.clickToCollapse": {
     "defaultMessage": "Нажмите, чтобы свернуть"
@@ -1506,7 +1506,7 @@
     "defaultMessage": "Файл рецепта"
   },
   "importRecipeForm.reviewWarning": {
-    "defaultMessage": "Проверяйте содержимое файлов рецептов перед добавлением в интерфейс goose."
+    "defaultMessage": "Проверяйте содержимое файлов рецептов перед добавлением в интерфейс QiaotongAgent."
   },
   "importRecipeForm.schemaDescription": {
     "defaultMessage": "Ваш YAML- или JSON-файл должен соответствовать этой структуре. Обязательные поля: title, description и instructions или prompt."
@@ -1617,13 +1617,13 @@
     "defaultMessage": "Горячие клавиши приложения"
   },
   "keyboardShortcuts.categoryApplicationDescription": {
-    "defaultMessage": "Эти сочетания работают, когда Goose является активным приложением"
+    "defaultMessage": "Эти сочетания работают, когда QiaotongAgent является активным приложением"
   },
   "keyboardShortcuts.categoryGlobal": {
     "defaultMessage": "Глобальные горячие клавиши"
   },
   "keyboardShortcuts.categoryGlobalDescription": {
-    "defaultMessage": "Эти сочетания работают во всей системе, даже когда Goose не в фокусе"
+    "defaultMessage": "Эти сочетания работают во всей системе, даже когда QiaotongAgent не в фокусе"
   },
   "keyboardShortcuts.categorySearch": {
     "defaultMessage": "Горячие клавиши поиска"
@@ -1665,10 +1665,10 @@
     "defaultMessage": "Найти предыдущее"
   },
   "keyboardShortcuts.focusWindowDescription": {
-    "defaultMessage": "Вывести окно Goose на передний план из любого места"
+    "defaultMessage": "Вывести окно QiaotongAgent на передний план из любого места"
   },
   "keyboardShortcuts.focusWindowLabel": {
-    "defaultMessage": "Сфокусировать окно Goose"
+    "defaultMessage": "Сфокусировать окно QiaotongAgent"
   },
   "keyboardShortcuts.loading": {
     "defaultMessage": "Загрузка..."
@@ -1680,7 +1680,7 @@
     "defaultMessage": "Новый чат"
   },
   "keyboardShortcuts.newChatWindowDescription": {
-    "defaultMessage": "Открыть новое окно Goose"
+    "defaultMessage": "Открыть новое окно QiaotongAgent"
   },
   "keyboardShortcuts.newChatWindowLabel": {
     "defaultMessage": "Новое окно чата"
@@ -1719,7 +1719,7 @@
     "defaultMessage": "Сбросить к значениям по умолчанию"
   },
   "keyboardShortcuts.restartDescription": {
-    "defaultMessage": "Чтобы изменения сочетаний приложения (например, Новый чат, Настройки и т. д.) вступили в силу, требуется перезапуск Goose. Глобальные сочетания (Фокус окна, Быстрый запуск) работают сразу."
+    "defaultMessage": "Чтобы изменения сочетаний приложения (например, Новый чат, Настройки и т. д.) вступили в силу, требуется перезапуск QiaotongAgent. Глобальные сочетания (Фокус окна, Быстрый запуск) работают сразу."
   },
   "keyboardShortcuts.restartRequired": {
     "defaultMessage": "Требуется перезапуск"
@@ -1749,13 +1749,13 @@
     "defaultMessage": "Переключить навигацию"
   },
   "launcher.placeholder": {
-    "defaultMessage": "Спросите goose о чем угодно..."
+    "defaultMessage": "Спросите QiaotongAgent о чем угодно..."
   },
   "loadingGoose.compacting": {
-    "defaultMessage": "goose сжимает разговор..."
+    "defaultMessage": "QiaotongAgent сжимает разговор..."
   },
   "loadingGoose.idle": {
-    "defaultMessage": "goose работает над этим…"
+    "defaultMessage": "QiaotongAgent работает над этим…"
   },
   "loadingGoose.loadingConversation": {
     "defaultMessage": "загрузка разговора..."
@@ -1764,13 +1764,13 @@
     "defaultMessage": "перезапуск сеанса..."
   },
   "loadingGoose.streaming": {
-    "defaultMessage": "goose работает над этим…"
+    "defaultMessage": "QiaotongAgent работает над этим…"
   },
   "loadingGoose.thinking": {
-    "defaultMessage": "goose думает…"
+    "defaultMessage": "QiaotongAgent думает…"
   },
   "loadingGoose.waiting": {
-    "defaultMessage": "goose ждет…"
+    "defaultMessage": "QiaotongAgent ждет…"
   },
   "localInferenceSettings.deleteConfirm": {
     "defaultMessage": "Удалить эту модель? Позже ее можно скачать снова."
@@ -2388,7 +2388,7 @@
     "defaultMessage": "Сервер может запускаться или быть временно недоступен."
   },
   "onboardingGuard.checkProviderErrorTitle": {
-    "defaultMessage": "Не удалось подключиться к серверу Goose"
+    "defaultMessage": "Не удалось подключиться к серверу QiaotongAgent"
   },
   "onboardingGuard.retry": {
     "defaultMessage": "Повторить"
@@ -2397,10 +2397,10 @@
     "defaultMessage": "Ваш локальный ИИ-агент. Подключите провайдера ИИ-модели, чтобы начать."
   },
   "onboardingGuard.welcomeTitle": {
-    "defaultMessage": "Добро пожаловать в goose"
+    "defaultMessage": "Добро пожаловать в QiaotongAgent"
   },
   "onboardingSuccess.allSet": {
-    "defaultMessage": "Все готово для начала работы с goose."
+    "defaultMessage": "Все готово для начала работы с QiaotongAgent."
   },
   "onboardingSuccess.connectedTo": {
     "defaultMessage": "Подключено к {providerName}"
@@ -2415,7 +2415,7 @@
     "defaultMessage": "Локальная модель готова"
   },
   "onboardingSuccess.privacyDescription": {
-    "defaultMessage": "Анонимные данные об использовании помогают улучшать goose. Мы никогда не собираем ваши разговоры, код или персональные данные."
+    "defaultMessage": "Анонимные данные об использовании помогают улучшать QiaotongAgent. Мы никогда не собираем ваши разговоры, код или персональные данные."
   },
   "onboardingSuccess.privacyTitle": {
     "defaultMessage": "Конфиденциальность"
@@ -2583,10 +2583,10 @@
     "defaultMessage": "Метрики сеанса (длительность, число взаимодействий, использование токенов)"
   },
   "privacyInfoModal.collectVersion": {
-    "defaultMessage": "Версия goose и способ установки"
+    "defaultMessage": "Версия QiaotongAgent и способ установки"
   },
   "privacyInfoModal.description": {
-    "defaultMessage": "Анонимные данные об использовании помогают понять как используется goose и найти области для улучшения."
+    "defaultMessage": "Анонимные данные об использовании помогают понять как используется QiaotongAgent и найти области для улучшения."
   },
   "privacyInfoModal.neverCollect": {
     "defaultMessage": "Мы никогда не собираем ваши разговоры, код, аргументы инструментов, сообщения об ошибках или персональные данные. Эту настройку можно изменить в любое время в настройках."
@@ -2655,7 +2655,7 @@
     "defaultMessage": "Не удалось сохранить промпт"
   },
   "promptsSettings.promptEditingDescription": {
-    "defaultMessage": "Настраивайте промпты, определяющие поведение goose в разных контекстах. Эти промпты используют синтаксис шаблонов Jinja2. Будьте осторожны при изменении переменных шаблона: неверные изменения могут нарушить работу. Делитесь улучшениями с сообществом."
+    "defaultMessage": "Настраивайте промпты, определяющие поведение QiaotongAgent в разных контекстах. Эти промпты используют синтаксис шаблонов Jinja2. Будьте осторожны при изменении переменных шаблона: неверные изменения могут нарушить работу. Делитесь улучшениями с сообществом."
   },
   "promptsSettings.promptEditingTitle": {
     "defaultMessage": "Редактирование промптов"
@@ -2751,7 +2751,7 @@
     "defaultMessage": "Вход..."
   },
   "providerConfigurationModal.addApiKeyDescription": {
-    "defaultMessage": "Добавьте API-ключи для этого провайдера, чтобы интегрировать его в goose"
+    "defaultMessage": "Добавьте API-ключи для этого провайдера, чтобы интегрировать его в QiaotongAgent"
   },
   "providerConfigurationModal.browserWindowHint": {
     "defaultMessage": "Откроется окно браузера для завершения входа."
@@ -2787,7 +2787,7 @@
     "defaultMessage": "Ошибка"
   },
   "providerConfigurationModal.externalSetupIntro": {
-    "defaultMessage": "Этот провайдер настраивается вне goose. Выполните следующие шаги:"
+    "defaultMessage": "Этот провайдер настраивается вне QiaotongAgent. Выполните следующие шаги:"
   },
   "providerConfigurationModal.goBack": {
     "defaultMessage": "Назад"
@@ -2862,7 +2862,7 @@
     "defaultMessage": "Загрузка провайдеров..."
   },
   "providerSettings.onboardingDescription": {
-    "defaultMessage": "Выберите провайдера ИИ-модели, чтобы начать работу с goose. Понадобятся API-ключи, созданные каждым провайдером; они будут зашифрованы и сохранены локально. Провайдера можно изменить в настройках в любое время."
+    "defaultMessage": "Выберите провайдера ИИ-модели, чтобы начать работу с QiaotongAgent. Понадобятся API-ключи, созданные каждым провайдером; они будут зашифрованы и сохранены локально. Провайдера можно изменить в настройках в любое время."
   },
   "providerSettings.otherProviders": {
     "defaultMessage": "Другие провайдеры"
@@ -3690,7 +3690,7 @@
     "defaultMessage": "Поделиться"
   },
   "sessionHistory.shareModal.description": {
-    "defaultMessage": "Поделитесь ссылкой на этот сеанс, чтобы другие могли просматривать ваш чат goose только для чтения."
+    "defaultMessage": "Поделитесь ссылкой на этот сеанс, чтобы другие могли просматривать ваш чат QiaotongAgent только для чтения."
   },
   "sessionHistory.shareModal.title": {
     "defaultMessage": "Поделиться сеансом (бета)"
@@ -3783,7 +3783,7 @@
     "defaultMessage": "Повторить попытку"
   },
   "sessionViewComponents.role.assistant": {
-    "defaultMessage": "Goose"
+    "defaultMessage": "QiaotongAgent"
   },
   "sessionViewComponents.role.user": {
     "defaultMessage": "Вы"
@@ -3813,7 +3813,7 @@
     "defaultMessage": "История чатов"
   },
   "sessions.chatHistoryDesc": {
-    "defaultMessage": "Просматривайте и ищите прошлые разговоры с Goose. {shortcut} для поиска."
+    "defaultMessage": "Просматривайте и ищите прошлые разговоры с QiaotongAgent. {shortcut} для поиска."
   },
   "sessions.close": {
     "defaultMessage": "Закрыть"
@@ -3852,7 +3852,7 @@
     "defaultMessage": "Импортировать ссылку"
   },
   "sessions.importNostr.description": {
-    "defaultMessage": "Вставьте ссылку общего доступа Goose Nostr, чтобы получить, расшифровать и импортировать сеанс."
+    "defaultMessage": "Вставьте ссылку общего доступа QiaotongAgent Nostr, чтобы получить, расшифровать и импортировать сеанс."
   },
   "sessions.importNostr.placeholder": {
     "defaultMessage": "goose://sessions/nostr?nevent=...&key=..."
@@ -3930,7 +3930,7 @@
     "defaultMessage": "Загрузка..."
   },
   "settings.appearance.description": {
-    "defaultMessage": "Настройте, как goose отображается в вашей системе"
+    "defaultMessage": "Настройте, как QiaotongAgent отображается в вашей системе"
   },
   "settings.appearance.title": {
     "defaultMessage": "Внешний вид"
@@ -3945,13 +3945,13 @@
     "defaultMessage": "Отслеживание стоимости"
   },
   "settings.dockIcon.description": {
-    "defaultMessage": "Показывать goose в Dock"
+    "defaultMessage": "Показывать QiaotongAgent в Dock"
   },
   "settings.dockIcon.title": {
     "defaultMessage": "Значок Dock"
   },
   "settings.help.description": {
-    "defaultMessage": "Помогите улучшить goose: сообщайте о проблемах или запрашивайте новые функции"
+    "defaultMessage": "Помогите улучшить QiaotongAgent: сообщайте о проблемах или запрашивайте новые функции"
   },
   "settings.help.reportBug": {
     "defaultMessage": "Сообщить об ошибке"
@@ -3963,7 +3963,7 @@
     "defaultMessage": "Помощь и отзывы"
   },
   "settings.menuBarIcon.description": {
-    "defaultMessage": "Показывать goose в строке меню"
+    "defaultMessage": "Показывать QiaotongAgent в строке меню"
   },
   "settings.menuBarIcon.title": {
     "defaultMessage": "Значок строки меню"
@@ -3984,7 +3984,7 @@
     "defaultMessage": "Нажмите «Уведомления»"
   },
   "settings.notifications.modal.macStep3": {
-    "defaultMessage": "Найдите и выберите goose в списке приложений"
+    "defaultMessage": "Найдите и выберите QiaotongAgent в списке приложений"
   },
   "settings.notifications.modal.macStep4": {
     "defaultMessage": "Включите уведомления и настройте параметры по желанию"
@@ -4002,7 +4002,7 @@
     "defaultMessage": "Перейдите в Система > Уведомления"
   },
   "settings.notifications.modal.winStep3": {
-    "defaultMessage": "Найдите и выберите goose в списке приложений"
+    "defaultMessage": "Найдите и выберите QiaotongAgent в списке приложений"
   },
   "settings.notifications.modal.winStep4": {
     "defaultMessage": "Включите уведомления и настройте параметры по желанию"
@@ -4011,7 +4011,7 @@
     "defaultMessage": "Откройте «Параметры»"
   },
   "settings.notifications.task.description": {
-    "defaultMessage": "Уведомлять, когда Goose завершает задачу, пока окно в фоне"
+    "defaultMessage": "Уведомлять, когда QiaotongAgent завершает задачу, пока окно в фоне"
   },
   "settings.notifications.task.title": {
     "defaultMessage": "Уведомления о завершении задач"
@@ -4020,19 +4020,19 @@
     "defaultMessage": "Уведомления"
   },
   "settings.preventSleep.description": {
-    "defaultMessage": "Не давать компьютеру засыпать, пока goose выполняет задачу (экран все равно может блокироваться)"
+    "defaultMessage": "Не давать компьютеру засыпать, пока QiaotongAgent выполняет задачу (экран все равно может блокироваться)"
   },
   "settings.preventSleep.title": {
     "defaultMessage": "Запретить сон"
   },
   "settings.theme.description": {
-    "defaultMessage": "Настройте внешний вид и ощущения goose"
+    "defaultMessage": "Настройте внешний вид и ощущения QiaotongAgent"
   },
   "settings.theme.title": {
     "defaultMessage": "Тема"
   },
   "settings.updates.description": {
-    "defaultMessage": "Проверяйте и устанавливайте обновления, чтобы goose работал оптимально"
+    "defaultMessage": "Проверяйте и устанавливайте обновления, чтобы QiaotongAgent работал оптимально"
   },
   "settings.updates.title": {
     "defaultMessage": "Обновления"
@@ -4113,7 +4113,7 @@
     "defaultMessage": "Поиск навыков..."
   },
   "skillsView.skillsDescription": {
-    "defaultMessage": "Просматривайте установленные навыки, расширяющие возможности Goose. {shortcut} для поиска."
+    "defaultMessage": "Просматривайте установленные навыки, расширяющие возможности QiaotongAgent. {shortcut} для поиска."
   },
   "skillsView.skillsTitle": {
     "defaultMessage": "Навыки"
@@ -4365,10 +4365,10 @@
     "defaultMessage": "Использовать другого провайдера"
   },
   "telemetryConsentPrompt.description": {
-    "defaultMessage": "Хотите поделиться анонимными данными об использовании, чтобы помочь улучшить goose? Мы никогда не собираем ваши разговоры, код или персональные данные."
+    "defaultMessage": "Хотите поделиться анонимными данными об использовании, чтобы помочь улучшить QiaotongAgent? Мы никогда не собираем ваши разговоры, код или персональные данные."
   },
   "telemetryConsentPrompt.heading": {
-    "defaultMessage": "Помогите улучшить goose"
+    "defaultMessage": "Помогите улучшить QiaotongAgent"
   },
   "telemetryConsentPrompt.learnMore": {
     "defaultMessage": "Подробнее"
@@ -4395,7 +4395,7 @@
     "defaultMessage": "Конфиденциальность"
   },
   "telemetrySettings.toggleDescription": {
-    "defaultMessage": "Помогите улучшить goose, делясь анонимной статистикой использования."
+    "defaultMessage": "Помогите улучшить QiaotongAgent, делясь анонимной статистикой использования."
   },
   "telemetrySettings.toggleLabel": {
     "defaultMessage": "Анонимные данные об использовании"
@@ -4473,10 +4473,10 @@
     "defaultMessage": "Разрешить {toolName}?"
   },
   "toolConfirmation.gooseWouldLikeToCallWithName": {
-    "defaultMessage": "Goose хочет вызвать {toolName}. Разрешить?"
+    "defaultMessage": "QiaotongAgent хочет вызвать {toolName}. Разрешить?"
   },
   "tunnelSection.appStoreQrInstructions": {
-    "defaultMessage": "Отсканируйте этот QR-код камерой iPhone, чтобы установить мобильное приложение goose из App Store"
+    "defaultMessage": "Отсканируйте этот QR-код камерой iPhone, чтобы установить мобильное приложение QiaotongAgent из App Store"
   },
   "tunnelSection.close": {
     "defaultMessage": "Закрыть"
@@ -4485,7 +4485,7 @@
     "defaultMessage": "Сведения о подключении"
   },
   "tunnelSection.downloadIosApp": {
-    "defaultMessage": "Скачать приложение goose для iOS"
+    "defaultMessage": "Скачать приложение QiaotongAgent для iOS"
   },
   "tunnelSection.failedToLoadStatus": {
     "defaultMessage": "Не удалось загрузить статус туннеля"
@@ -4512,13 +4512,13 @@
     "defaultMessage": "или"
   },
   "tunnelSection.previewDescription": {
-    "defaultMessage": "Включите удаленный доступ к goose с мобильных устройств через защищенное туннелирование."
+    "defaultMessage": "Включите удаленный доступ к QiaotongAgent с мобильных устройств через защищенное туннелирование."
   },
   "tunnelSection.previewFeature": {
     "defaultMessage": "Предварительная функция:"
   },
   "tunnelSection.qrCodeInstructions": {
-    "defaultMessage": "Отсканируйте этот QR-код мобильным приложением goose. Не делитесь этим кодом: он предназначен для вашего личного доступа."
+    "defaultMessage": "Отсканируйте этот QR-код мобильным приложением QiaotongAgent. Не делитесь этим кодом: он предназначен для вашего личного доступа."
   },
   "tunnelSection.retry": {
     "defaultMessage": "Повторить"
@@ -4608,7 +4608,7 @@
     "defaultMessage": "Для этого способа обновления требуется ручная установка."
   },
   "updateSection.readyInstallAuto": {
-    "defaultMessage": "✓ Обновление готово! Оно будет установлено при выходе из Goose."
+    "defaultMessage": "✓ Обновление готово! Оно будет установлено при выходе из QiaotongAgent."
   },
   "updateSection.readyInstallManual": {
     "defaultMessage": "✓ Обновление готово! Нажмите «Установить и перезапустить», чтобы получить инструкции по установке."

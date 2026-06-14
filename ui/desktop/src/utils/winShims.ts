@@ -13,7 +13,7 @@ export async function ensureWinShims(): Promise<void> {
   const srcDir = path.join(process.resourcesPath, 'bin'); // existing dir
   const tgtDir = path.join(
     process.env.LOCALAPPDATA ?? path.join(os.homedir(), 'AppData', 'Local'),
-    'Goose',
+    'QiaotongAgent',
     'bin'
   );
 
@@ -43,7 +43,7 @@ export async function ensureWinShims(): Promise<void> {
     const currentPath = process.env.PATH ?? '';
     if (!currentPath.toLowerCase().includes(tgtDir.toLowerCase())) {
       process.env.PATH = `${tgtDir}${path.delimiter}${currentPath}`;
-      log.info(`Added ${tgtDir} to PATH for Goose processes only`);
+      log.info(`Added ${tgtDir} to PATH for QiaotongAgent processes only`);
     } else {
       // If it's already in PATH, make sure it's at the beginning
       const pathParts = currentPath.split(path.delimiter);
@@ -53,7 +53,7 @@ export async function ensureWinShims(): Promise<void> {
         // Remove it from its current position and add to beginning
         pathParts.splice(binDirIndex, 1);
         process.env.PATH = `${tgtDir}${path.delimiter}${pathParts.join(path.delimiter)}`;
-        log.info(`Moved ${tgtDir} to beginning of PATH for Goose processes only`);
+        log.info(`Moved ${tgtDir} to beginning of PATH for QiaotongAgent processes only`);
       }
     }
   } catch (error) {
