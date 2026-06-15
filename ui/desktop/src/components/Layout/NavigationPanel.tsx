@@ -12,13 +12,13 @@ import {
   type NavItem,
 } from '../../hooks/useNavigationItems';
 import { AppEvents } from '../../constants/events';
-import { Goose } from '../icons/Goose';
 import { InlineEditText } from '../common/InlineEditText';
 import { SessionIndicators } from '../SessionIndicators';
 import { updateSessionName } from '../../api';
 import type { SessionListItem } from '../../acp/sessions';
 import { cn } from '../../utils';
 import { defineMessages, useIntl } from '../../i18n';
+import appIcon from '../../images/icon.png';
 
 type StreamState = 'idle' | 'loading' | 'streaming' | 'error';
 
@@ -207,7 +207,7 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
     >
       {/* Header: logo + collapse button. Top padding clears the macOS traffic lights. */}
       <div className="flex items-center justify-between px-4 pt-[34px] pb-2 no-drag">
-        <Goose className="w-6 h-6 text-text-primary" />
+        <img src={appIcon} alt="" className="w-6 h-6 object-contain" />
         <button
           onClick={() => setIsNavExpanded(false)}
           className="p-1.5 rounded-md hover:bg-background-tertiary transition-colors"
